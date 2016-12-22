@@ -1,0 +1,58 @@
+﻿@model McCoy_Assessment.Models.StoreModel
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>View</h2>
+
+<div>
+    <h4>StoreModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StoreNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StoreNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StoreName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StoreName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StoreManagerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StoreManagerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OpenTime.Value.TimeOfDay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OpenTime.Value.TimeOfDay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CloseTime.Value.TimeOfDay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CloseTime.Value.TimeOfDay)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { StoreNumber = Model.StoreNumber }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
